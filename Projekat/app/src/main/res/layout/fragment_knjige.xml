@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/dodaj"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/dodaj"/>
+    <EditText
+        android:id="@+id/searchBar1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <Button
+        android:id="@+id/pretrazi1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Pretrazi"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/knjiga_card"
+        />
+
+</LinearLayout>

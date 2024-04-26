@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aktivnost_kontejner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prikaz"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+    <!--            zajedno s sadržajem (scroll) i
+                uvijek biti vidljiv (enterAlways)-->
+
+    <TextView
+        android:id="@+id/prikaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/prikaziDozvolu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"/>
+    <Button
+        android:id="@+id/prikaziDozvolu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trazi_dozvolu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prikaz"
+        app:layout_constraintBottom_toTopOf="@id/prikaziDozvolu2"/>
+
+    <Button
+        android:id="@+id/prikaziDozvolu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trazi_dozvolu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prikaz"
+        app:layout_constraintBottom_toTopOf="@id/prikaziBoju"/>
+
+    <Button
+        android:id="@+id/prikaziBoju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oboji_element"
+        app:layout_constraintBottom_toTopOf="@id/fragmentContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prikaziDozvolu2" />
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prikaziBoju" />
+
+    <!--<RelativeLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prikaziBoju">
+
+    </RelativeLayout>
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

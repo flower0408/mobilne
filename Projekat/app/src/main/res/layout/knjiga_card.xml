@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/knjiga_card_item"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/border_background"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_kc"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/naslov"
+            android:labelFor="@id/naslov"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/naslov" />
+
+        <TextView
+            android:id="@+id/brStranica"
+            android:labelFor="@id/brStranica"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:text="@string/broj_stranica" />
+
+        <TextView
+            android:id="@+id/povez"
+            android:labelFor="@id/povez"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:text="@string/povez" />
+
+        <TextView
+            android:id="@+id/zanr"
+            android:labelFor="@id/zanr"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:text="@string/zanr" />
+
+        <TextView
+            android:id="@+id/autor"
+            android:labelFor="@id/autor"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:text="@string/autor" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/delButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/obrisi" />
+        <Button
+            android:id="@+id/izmeni"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Izmeni" />
+
+    </LinearLayout>
+</LinearLayout>

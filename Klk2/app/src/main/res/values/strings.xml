@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">ShopApp</string>
+    <string name="shop_app" translatable="false">Shop App</string>
+    <string name="samsung_galaxy_s23_ultra_gray">Samsung Galaxy S23 Ultra Gray</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="logout">Logout</string>
+    <string name="products">Products</string>
+    <string name="new_product">New product</string>
+    <string name="new_">New</string>
+    <string name="channel_name">Notification channel</string>
+    <string name="channel_description">Description</string>
+
+    <string name="add_item">Add</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="confirm_new_pr">Confirm</string>
+    <string name="enter_product_description">Enter product description</string>
+    <string name="enter_product_name">Enter product name</string>
+    <string name="oboji">Oboji</string>
+    <string name="reprodukuj">Reprodukuj</string>
+    <string name="dodaj">Dodaj</string>
+</resources>

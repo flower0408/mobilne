@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SensorsFragment">
+
+    <TextView
+        android:id="@+id/sensorsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/sensors"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvAccelerometar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensorsTitle"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/accelerometer"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvLinearAccelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAccelerometar"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/non_gravity_accelerometer"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/tvMagneticField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLinearAccelerometer"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/magnetic_field"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvGyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAccelerometar"
+        android:layout_below="@+id/tvMagneticField"
+        android:layout_marginTop="30dp"
+        android:text="@string/gyroscope"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvProximitySensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvGyroscope"
+        android:layout_below="@+id/tvGyroscope"
+        android:layout_marginTop="30dp"
+        android:text="@string/proximity_sensor"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
